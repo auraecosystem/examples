@@ -5,6 +5,13 @@ demonstrate the language, standard libraries, and tools.
 
 ## The examples
 
+### [appengine-hello](hello/) ([godoc](//godoc.org/github.com/golang/example/appengine-hello))
+
+	goapp get github.com/golang/example/appengine-hello
+
+A trivial "Hello, world" App Engine application intended to be used as the
+starting point for your own code.
+
 ### [hello](hello/) ([godoc](//godoc.org/github.com/golang/example/hello)) and [stringutil](stringutil/) ([godoc](//godoc.org/github.com/golang/example/stringutil))
 
     go get github.com/golang/example/hello
