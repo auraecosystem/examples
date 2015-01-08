@@ -1,0 +1,152 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e697d05_f8618df2",
+        "filename": "appengine-bootstrap/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "I don\u0027t think \"bootstrap\" is a great naming choice here, and the word \"generate\" implies machine generation. Really it\u0027s a starting point. Perhaps it should be \"appengine-hello\" ?",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 7
+      },
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_987df9a0",
+        "filename": "appengine-bootstrap/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "You should also update the README in the repo root.",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_3854a519",
+        "filename": "appengine-bootstrap/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "link to the cloud sdk\nalso this is a markdown file so it can actually be a link",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_5853612f",
+        "filename": "appengine-bootstrap/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "indent",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 8
+      },
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_d85e5134",
+        "filename": "appengine-bootstrap/app.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "I think this should be /hello and the handler should be helloHandler",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_38bf85d5",
+        "filename": "appengine-bootstrap/static/index.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "This should be style.css since presumably it styles more than just the index page.",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_78c9fd89",
+        "filename": "appengine-bootstrap/static/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "\u003c!DOCTYPE html\u003e",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e697d05_d8b931e9",
+        "filename": "appengine-bootstrap/static/index.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2015-01-08T02:17:48Z",
+      "side": 1,
+      "message": "this should be script.js",
+      "revId": "f768e52253633619960a5dac9c2c528a6e548ad9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
