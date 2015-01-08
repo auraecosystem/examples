@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // Package stringutil contains utility functions for working with strings.
-package stringutil
+package stringutil // import "golang.org/x/example/stringutil"
 
 // Reverse returns its argument string reversed rune-wise left to right.
 func Reverse(s string) string {
