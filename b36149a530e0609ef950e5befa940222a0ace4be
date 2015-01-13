@@ -42,6 +42,48 @@
     },
     {
       "key": {
+        "uuid": "ee7b115e_2504183f",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 5955
+      },
+      "writtenOn": "2015-01-13T05:44:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee995184_952bc6ec",
+      "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee7b115e_45011c2e",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 5955
+      },
+      "writtenOn": "2015-01-13T05:44:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee995184_b528caf0",
+      "range": {
+        "startLine": 8,
+        "startChar": 22,
+        "endLine": 8,
+        "endChar": 27
+      },
+      "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ee995184_d5254e17",
         "filename": "README.md",
         "patchSetId": 3
@@ -53,6 +95,24 @@
       "writtenOn": "2015-01-09T01:59:59Z",
       "side": 1,
       "message": "mention you need the app engine sdk\u0027s \u0027goapp\u0027 tool",
+      "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee7b115e_a51ae895",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5955
+      },
+      "writtenOn": "2015-01-13T05:44:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee995184_d5254e17",
       "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
@@ -76,6 +136,24 @@
     },
     {
       "key": {
+        "uuid": "ee7b115e_c51fec84",
+        "filename": "appengine-hello/static/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5955
+      },
+      "writtenOn": "2015-01-13T05:44:42Z",
+      "side": 1,
+      "message": "Not needed in HTML5",
+      "parentUuid": "ee995184_15c356cd",
+      "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ee995184_35c85ae7",
         "filename": "appengine-hello/static/index.html",
         "patchSetId": 3
@@ -87,6 +165,24 @@
       "writtenOn": "2015-01-09T01:59:59Z",
       "side": 1,
       "message": "Click ... message.",
+      "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee7b115e_a56ca8f9",
+        "filename": "appengine-hello/static/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5955
+      },
+      "writtenOn": "2015-01-13T05:44:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee995184_35c85ae7",
       "revId": "b36149a530e0609ef950e5befa940222a0ace4be",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
