@@ -1,0 +1,6 @@
+Code-Review+2: Andrew Gerrand <adg@golang.org>
+Submitted-by: Chris Broadfoot <cbro@golang.org>
+Submitted-at: Wed, 10 Jun 2015 00:25:24 +0000
+Reviewed-on: https://go-review.googlesource.com/10873
+Project: example
+Branch: refs/heads/master
