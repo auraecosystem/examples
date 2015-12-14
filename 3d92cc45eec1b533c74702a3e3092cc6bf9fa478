@@ -1,0 +1,575 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "852462f4_0ad4fbc4",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/We\u0027ve/I have/ ?\n\n(I didn\u0027t do anything here)\n\nor maybe:\n\nThis tutorial will help you find your bearings.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 5
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65f20ea9_94e48cd1",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "in fact, we are going to delete it 1 month after 1.6 is out",
+      "range": {
+        "startLine": 55,
+        "startChar": 36,
+        "endLine": 55,
+        "endChar": 41
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "651beeb8_89259d8e",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "implements a recursive-descent parser for Go that creates the AST.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 42
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "852462f4_eabc0786",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "nice intro",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "651beeb8_296749d3",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/thing/setting/",
+      "range": {
+        "startLine": 186,
+        "startChar": 42,
+        "endLine": 186,
+        "endChar": 47
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a52166e4_cb0949b2",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/table/data type/ (or data structure)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "651beeb8_696141ba",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/reports/goes to extra lengths to report/",
+      "range": {
+        "startLine": 240,
+        "startChar": 55,
+        "endLine": 240,
+        "endChar": 56
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "85a542c9_628198b3",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "explain that the hex number may be different on different platforms\n\n(or somebody _will_ complain)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "85a542c9_428e94e3",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "workspace? Was it defined what this means?",
+      "range": {
+        "startLine": 269,
+        "startChar": 22,
+        "endLine": 269,
+        "endChar": 31
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0593126b_9134bc20",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 276,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "if not all ... agree.",
+      "range": {
+        "startLine": 276,
+        "startChar": 37,
+        "endLine": 276,
+        "endChar": 40
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45a7cad1_2385ceed",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": ".. but otherwise is not visible to a program.\n\n(package names reside in no scope)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a52166e4_6ba3fddb",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "const, var, type, or func\n\n(technically imports also belong here)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25fc967c_4f7a9104",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 324,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/may/is/\n\nperhaps:\n\n... indicating that the object is exported and thus is visible from...",
+      "range": {
+        "startLine": 324,
+        "startChar": 58,
+        "endLine": 324,
+        "endChar": 61
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "852462f4_aa35efd4",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 324,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/capital/capital letter/",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "85a542c9_6233d8ef",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 345,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "calling Pos on an imported object returns zero, ...",
+      "range": {
+        "startLine": 344,
+        "startChar": 58,
+        "endLine": 345,
+        "endChar": 51
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5865a2d_ecd4436a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 416,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "named fields such as f in struct{f T} from anonymous ones such as T in ...\n\n(struct{T T} is not a field)",
+      "range": {
+        "startLine": 416,
+        "startChar": 54,
+        "endLine": 416,
+        "endChar": 60
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a57de6ee_0b70a1bd",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 588,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "s/than type/than one type/",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25fc967c_927adcc7",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 716,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "It\u0027s not really the global variable. It\u0027s the fact that there\u0027s only one Universe for all programs.",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a52166e4_ae34e31f",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 889,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "Use spaces instead of tabs for correct alignment?",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5865a2d_8ce9071a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 959,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "... and verifying its correctness.\n\n(or some such). The point is to report errors.",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25fc967c_12d9cc14",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1033,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "nullary sounds nice but doesn\u0027t really add meaning here, does it? maybe:\n\nthat is, the atomic types. (?)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45a7cad1_03a9b2bb",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1117,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "add extra empty line(s)?",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65f20ea9_d4d4546a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1650,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "use spaces for alignment?",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65f20ea9_f4b0704a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1797,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "reference to issue?",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5865a2d_cc685f3c",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2087,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "... integers or fractions, and floating-point numbers with at least 256bits of mantissa where neither an integer or a fraction can represent a number in compact-enough form (e.g.,  constants with extremely small or large exponents).",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "651beeb8_acd86746",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2249,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "it does not in general contain ...\n\n(it does for exported inlinable functions)",
+      "range": {
+        "startLine": 2249,
+        "startChar": 28,
+        "endLine": 2249,
+        "endChar": 34
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45a7cad1_46610816",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2274,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "is likely to -\u003e may change\n\n(no need to advertise instability)",
+      "range": {
+        "startLine": 2274,
+        "startChar": 55,
+        "endLine": 2274,
+        "endChar": 61
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45a7cad1_06fd405d",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2379,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "maybe:\n\nFormatting support\nPrinting support\n\n?\n\n(values sounds like constant values to me)",
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65f20ea9_14c53c8c",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2523,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-14T22:35:03Z",
+      "side": 1,
+      "message": "You must have set the parser\u0027s `ParseComment`.\n\n(the flag itself cannot be \u0027enabled\u0027).",
+      "range": {
+        "startLine": 2523,
+        "startChar": 22,
+        "endLine": 2523,
+        "endChar": 25
+      },
+      "revId": "3d92cc45eec1b533c74702a3e3092cc6bf9fa478",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
