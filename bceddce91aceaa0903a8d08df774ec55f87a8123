@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a5d1668e_91aa5e46",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-17T19:05:56Z",
+      "side": 1,
+      "message": "that sounds weird to me - how about\n\nObject kinds\n\n?",
+      "range": {
+        "startLine": 269,
+        "startChar": 25,
+        "endLine": 269,
+        "endChar": 31
+      },
+      "revId": "bceddce91aceaa0903a8d08df774ec55f87a8123",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a5d1668e_d1b4d6a9",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 776,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2015-12-17T19:05:56Z",
+      "side": 1,
+      "message": "garbage?",
+      "revId": "bceddce91aceaa0903a8d08df774ec55f87a8123",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
