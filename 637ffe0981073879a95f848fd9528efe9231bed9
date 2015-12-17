@@ -1,0 +1,6 @@
+Code-Review+2: Robert Griesemer <gri@golang.org>
+Submitted-by: Alan Donovan <adonovan@google.com>
+Submitted-at: Thu, 17 Dec 2015 17:00:17 +0000
+Reviewed-on: https://go-review.googlesource.com/17388
+Project: example
+Branch: refs/heads/master
