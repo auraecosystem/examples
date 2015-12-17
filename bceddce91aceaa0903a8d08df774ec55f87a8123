@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c5365ac7_0984a9c3",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2015-12-17T19:24:03Z",
+      "side": 1,
+      "message": "I just learned that this is a US vs. British thing.  The plural sounds so strange to my ear that I made this change---then your comment jogged my memory that back in I initially wrote it using the plural and you corrected me then---back in August. :)\n\nI\u0027ll make it plural again.  It does seem more rational.",
+      "parentUuid": "a5d1668e_91aa5e46",
+      "range": {
+        "startLine": 269,
+        "startChar": 25,
+        "endLine": 269,
+        "endChar": 31
+      },
+      "revId": "bceddce91aceaa0903a8d08df774ec55f87a8123",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a5d1668e_d1b4d6a9",
         "filename": "gotypes/go-types.md",
         "patchSetId": 2
@@ -36,6 +60,24 @@
       "writtenOn": "2015-12-17T19:05:56Z",
       "side": 1,
       "message": "garbage?",
+      "revId": "bceddce91aceaa0903a8d08df774ec55f87a8123",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5365ac7_29816db4",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 776,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2015-12-17T19:24:03Z",
+      "side": 1,
+      "message": "Yikes.  I botched a resolve.",
+      "parentUuid": "a5d1668e_d1b4d6a9",
       "revId": "bceddce91aceaa0903a8d08df774ec55f87a8123",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
