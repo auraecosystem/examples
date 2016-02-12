@@ -16,6 +16,24 @@
       "revId": "f8e924922acef131602427154cf0c1c1d59439dd",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d808813_b07a9e4a",
+        "filename": "template/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5010
+      },
+      "writtenOn": "2016-02-12T03:56:49Z",
+      "side": 1,
+      "message": "Because this is github.com/golang/example (not golang.org/x/example) and it predates the rest of Go existing on GitHub. At that time it was simpler to use Google\u0027s default Apache 2.0 license for releasing this example code, and so I maintain the status quo with this addition.",
+      "parentUuid": "5d808813_70690687",
+      "revId": "f8e924922acef131602427154cf0c1c1d59439dd",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
     }
   ]
 }
