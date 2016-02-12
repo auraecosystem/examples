@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d808813_70690687",
+        "filename": "template/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5015
+      },
+      "writtenOn": "2016-02-12T03:51:32Z",
+      "side": 1,
+      "message": "why an apache license?",
+      "revId": "f8e924922acef131602427154cf0c1c1d59439dd",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
