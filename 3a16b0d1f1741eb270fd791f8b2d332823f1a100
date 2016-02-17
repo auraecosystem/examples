@@ -33,6 +33,24 @@
       "revId": "3a16b0d1f1741eb270fd791f8b2d332823f1a100",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1d18d02b_9510a4a4",
+        "filename": "template/main.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2016-02-17T19:50:33Z",
+      "side": 1,
+      "message": "Define \"prevent access\". Listening on localhost makes sure random other people on your network can\u0027t access your server, which is what you want. The code is correct as written.",
+      "parentUuid": "9d85a05b_e067ac24",
+      "revId": "3a16b0d1f1741eb270fd791f8b2d332823f1a100",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
     }
   ]
 }
