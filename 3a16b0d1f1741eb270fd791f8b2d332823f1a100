@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1d18d02b_f5059860",
+        "filename": "template/index.tmpl",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2016-02-17T19:51:46Z",
+      "side": 1,
+      "message": "I think we can leave them here and let Andrew submit a followup CL removing them. When you are ready for the release just click Submit on this CL as is.",
+      "parentUuid": "9d85a05b_c08f0817",
+      "revId": "3a16b0d1f1741eb270fd791f8b2d332823f1a100",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9d85a05b_e067ac24",
         "filename": "template/main.go",
         "patchSetId": 3
