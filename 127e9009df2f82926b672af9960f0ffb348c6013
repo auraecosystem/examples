@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d4fd45ea_fcf57e5e",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2016-06-16T18:42:11Z",
+      "side": 1,
+      "message": "How about:\n\nThe `go/types` package is a type-checker for Go programs.  It is one of the most complex packages in Go\u0027s standard library, so we have provided this tutorial to help you find your bearings.  It comes with several example programs that you can obtain using `go get` and play with as you learn to build tools that analyze or manipulate Go programs.",
+      "revId": "127e9009df2f82926b672af9960f0ffb348c6013",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
