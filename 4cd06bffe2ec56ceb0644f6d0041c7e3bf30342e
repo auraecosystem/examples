@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "213db295_9e2250b4",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "s/declaration/definition/",
+      "range": {
+        "startLine": 414,
+        "startChar": 16,
+        "endLine": 414,
+        "endChar": 27
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a4e983d_5c410723",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "s/equivalent//",
+      "range": {
+        "startLine": 1261,
+        "startChar": 45,
+        "endLine": 1261,
+        "endChar": 55
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "03bc836a_b1b175c3",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "s/creates/declares/\n\n(the name is not created - the user provides it)",
+      "range": {
+        "startLine": 1261,
+        "startChar": 29,
+        "endLine": 1261,
+        "endChar": 36
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7bcb5d7f_da44a6cb",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1278,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "s/create/declare/",
+      "range": {
+        "startLine": 1278,
+        "startChar": 37,
+        "endLine": 1278,
+        "endChar": 44
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10969242_1cd421b5",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1281,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "s/distinct/different/\n\nJust say that this time is different from any other type, including float64.",
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "468c3fb3_93d0cfbe",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1283,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "I\u0027d leave this away. At the very least I\u0027d not introduce \u0027branded\u0027 at this point. We will have enough people confused about \u0027defined\u0027 vs \u0027named\u0027 and we need to stay on message.\n\nI\u0027d introduce the term \u0027defined type\u0027 because that\u0027s what they are called in the spec.",
+      "range": {
+        "startLine": 1283,
+        "startChar": 35,
+        "endLine": 1283,
+        "endChar": 43
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f2fe0b6_5e737d8a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1299,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:11:16Z",
+      "side": 1,
+      "message": "remove `brand` and rephrase",
+      "range": {
+        "startLine": 1299,
+        "startChar": 32,
+        "endLine": 1299,
+        "endChar": 39
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
