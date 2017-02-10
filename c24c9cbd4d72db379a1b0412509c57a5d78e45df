@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdbbb0ee_5b3d485e",
+        "filename": "gotypes/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:34:44Z",
+      "side": 1,
+      "message": "s/another/a/\n\n(which other type?)",
+      "range": {
+        "startLine": 413,
+        "startChar": 33,
+        "endLine": 413,
+        "endChar": 40
+      },
+      "revId": "c24c9cbd4d72db379a1b0412509c57a5d78e45df",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c280a77_31f3c1c9",
+        "filename": "gotypes/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:34:44Z",
+      "side": 1,
+      "message": "s/declaration/definition/",
+      "range": {
+        "startLine": 414,
+        "startChar": 16,
+        "endLine": 414,
+        "endChar": 27
+      },
+      "revId": "c24c9cbd4d72db379a1b0412509c57a5d78e45df",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b8af49c_e4085ae0",
+        "filename": "gotypes/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 1268,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:34:44Z",
+      "side": 1,
+      "message": "s/This/The/\n\n(This used twice)",
+      "range": {
+        "startLine": 1268,
+        "startChar": 0,
+        "endLine": 1268,
+        "endChar": 4
+      },
+      "revId": "c24c9cbd4d72db379a1b0412509c57a5d78e45df",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d23aefaf_b98cdf71",
+        "filename": "gotypes/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 1279,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:34:44Z",
+      "side": 1,
+      "message": "s/additionally/first/ ?",
+      "revId": "c24c9cbd4d72db379a1b0412509c57a5d78e45df",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50fba2c9_d9007a49",
+        "filename": "gotypes/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 1281,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T19:34:44Z",
+      "side": 1,
+      "message": "missing blank before `float64`",
+      "revId": "c24c9cbd4d72db379a1b0412509c57a5d78e45df",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
