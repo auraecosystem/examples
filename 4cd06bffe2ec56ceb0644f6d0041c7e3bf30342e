@@ -71,6 +71,54 @@
     },
     {
       "key": {
+        "uuid": "ede400dd_ee4b3a8b",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a4e983d_5c410723",
+      "range": {
+        "startLine": 1261,
+        "startChar": 45,
+        "endLine": 1261,
+        "endChar": 55
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9dbfe0ec_8e81dd35",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "03bc836a_b1b175c3",
+      "range": {
+        "startLine": 1261,
+        "startChar": 29,
+        "endLine": 1261,
+        "endChar": 36
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7bcb5d7f_da44a6cb",
         "filename": "gotypes/README.md",
         "patchSetId": 2
@@ -82,6 +130,30 @@
       "writtenOn": "2017-02-10T19:11:16Z",
       "side": 1,
       "message": "s/create/declare/",
+      "range": {
+        "startLine": 1278,
+        "startChar": 37,
+        "endLine": 1278,
+        "endChar": 44
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0213713e_e5350d6a",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1278,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Changed to \"more than just give another name to a type\" to avoid repetition of \"declare\".",
+      "parentUuid": "7bcb5d7f_da44a6cb",
       "range": {
         "startLine": 1278,
         "startChar": 37,
@@ -111,6 +183,24 @@
     },
     {
       "key": {
+        "uuid": "2f12b228_8464e3b6",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1281,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "10969242_1cd421b5",
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "468c3fb3_93d0cfbe",
         "filename": "gotypes/README.md",
         "patchSetId": 2
@@ -134,6 +224,30 @@
     },
     {
       "key": {
+        "uuid": "0ba5eaba_dc9bf8e3",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1283,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "468c3fb3_93d0cfbe",
+      "range": {
+        "startLine": 1283,
+        "startChar": 35,
+        "endLine": 1283,
+        "endChar": 43
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2f2fe0b6_5e737d8a",
         "filename": "gotypes/README.md",
         "patchSetId": 2
@@ -145,6 +259,30 @@
       "writtenOn": "2017-02-10T19:11:16Z",
       "side": 1,
       "message": "remove `brand` and rephrase",
+      "range": {
+        "startLine": 1299,
+        "startChar": 32,
+        "endLine": 1299,
+        "endChar": 39
+      },
+      "revId": "4cd06bffe2ec56ceb0644f6d0041c7e3bf30342e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "321a3db8_7bb3947e",
+        "filename": "gotypes/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1299,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-10T19:26:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2f2fe0b6_5e737d8a",
       "range": {
         "startLine": 1299,
         "startChar": 32,
