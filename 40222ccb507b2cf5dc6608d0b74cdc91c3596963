@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f481eb5_1d07e222",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T20:39:26Z",
+      "side": 1,
+      "message": "s/another/a/\n\nthe existing type may not have a name yet\n\n... declares a (possibly alternative) name for ..",
+      "range": {
+        "startLine": 1261,
+        "startChar": 38,
+        "endLine": 1261,
+        "endChar": 45
+      },
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79137e38_90b464f0",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1278,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T20:39:26Z",
+      "side": 1,
+      "message": "s/another/a/",
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "09000e76_6a4ecdcf",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1279,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T20:39:26Z",
+      "side": 1,
+      "message": "s/also//",
+      "range": {
+        "startLine": 1279,
+        "startChar": 37,
+        "endLine": 1279,
+        "endChar": 41
+      },
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b2a7234b_6b77a0e1",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1285,
+      "author": {
+        "id": 5210
+      },
+      "writtenOn": "2017-02-10T20:39:26Z",
+      "side": 1,
+      "message": "... _defined_types_ for types created by this form of type declaration, but the type checker API predates that change and instead calls defined types named types.",
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    }
+  ]
+}
