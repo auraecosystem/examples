@@ -269,7 +269,7 @@ possible types, and we commonly use a type switch to distinguish them.
 	Object = *Func         // function, concrete method, or abstract method
 	       | *Var          // variable, parameter, result, or struct field
 	       | *Const        // constant
-	       | *TypeName     // named type (except for predeclared ones)
+	       | *TypeName     // type name
 	       | *Label        // statement label
 	       | *PkgName      // package name, e.g. json after import "encoding/json"
 	       | *Builtin      // predeclared function such as append or len
@@ -313,6 +313,7 @@ And some kinds of objects have methods in addition to those required by the
 	func (*Var) Anonymous() bool
 	func (*Var) IsField() bool
 	func (*Const) Val() constant.Value
+	func (*TypeName) IsAlias() bool // expected in Go 1.9
 	func (*PkgName) Imported() *Package
 
 
@@ -324,6 +325,11 @@ variables, and `(*Var).Anonymous` discriminates named fields like
 the one in `struct{T T}` from anonymous fields like the one in `struct{T}`.
 `(*Const).Val` returns the value of a named [constant](#constants).
 
+
+`(*TypeName).IsAlias`, to be introduced in Go 1.9, reports whether the
+type name is simply an alias for another type (as in `type I = int`),
+as opposed to a declaration of a [`Named`](#named-types) type, as
+in `type Celsius float64`.
 
 
 `(*PkgName).Imported` returns the package (for instance,
@@ -1070,11 +1076,33 @@ These types are recorded during type checking for later use
 ## Named Types
 
 
-A type declaration creates a `TypeName` object, and the type of
-that object is a `Named`.
-These two entities, an object and a type, are distinct but closely
-related, and they exist in one-to-one correspondence.
+Type declarations come in two forms.  The simplest kind, to be
+introduced in Go 1.9, merely creates another equivalent name for an
+existing type.  Type names used in this way are informally called
+_type aliases_.  For example, this declaration lets you use the type
+`Dictionary` as an alias for `map[string]string`:
 
+	type Dictionary = map[string]string
+
+This declaration creates a `TypeName` object for `Dictionary`.  The
+object's `IsAlias` method returns true, and its `Type` method returns
+a `Map` type that represents `map[string]string`.
+
+
+The second form of type declaration, and the only kind prior to Go
+1.9, does not use an equals sign:
+
+	type Celsius float64
+
+This declaration does more than just create a new name for a type.
+It additionally creates a new `Named` type (also called `Celsius`)
+whose underlying type is `float64`.
+This `Named` type is distinct from `float64` and from all other `Named`
+types, even those whose underlying type is also `float64`.
+Some languages call this concept a _branded type_:
+`Celsius` and `Fahrenheit` are two different brands of `float64`.
+To recap, this declaration creates a distinct `Named` type and binds a
+`TypeName` object to it.
 
 	type Named struct{ ... }
 	func (*Named) NumMethods() int
@@ -1082,13 +1110,15 @@ related, and they exist in one-to-one correspondence.
 	func (*Named) Obj() *TypeName
 	func (*Named) Underlying() Type
 
-
 The `Named` type's `Obj` method returns the `TypeName` object, which
 provides the name, position, and other properties of the declaration.
 Conversely, the `TypeName` object's `Type` method returns the `Named` type.
 
-
-
+A `Named` type may appear as the receiver type in a method declaration.
+Methods are associated with the _brand_ of type (the `Named` type),
+not the name (the `TypeName` object); it's possible---though
+cryptic---to declare a method on a `Named` type using one of its
+aliases.
 The `NumMethods` and `Method` methods enumerate the declared
 methods associated with this `Named` type (or a pointer to it),
 in the order they were declared.
