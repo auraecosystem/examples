@@ -65,6 +65,30 @@
     },
     {
       "key": {
+        "uuid": "28ffb410_b92ebbd4",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1279,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-13T20:18:57Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "09000e76_6a4ecdcf",
+      "range": {
+        "startLine": 1279,
+        "startChar": 37,
+        "endLine": 1279,
+        "endChar": 41
+      },
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b2a7234b_6b77a0e1",
         "filename": "gotypes/README.md",
         "patchSetId": 4
@@ -76,6 +100,24 @@
       "writtenOn": "2017-02-10T20:39:26Z",
       "side": 1,
       "message": "... _defined_types_ for types created by this form of type declaration, but the type checker API predates that change and instead calls defined types named types.",
+      "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "133b9297_8fedc2fe",
+        "filename": "gotypes/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 1285,
+      "author": {
+        "id": 5195
+      },
+      "writtenOn": "2017-02-13T20:18:57Z",
+      "side": 1,
+      "message": "Done.  I also added a clause:\n\nSince Go 1.9, the Go language specification has used the term _defined\ntypes_ instead of named types;\nthe essential property of a defined type is not that it has a name,\nbut that it is a distinct type with its own method set.\nHowever, the type checker API predates that\nchange and instead calls defined types \"named\" types.",
+      "parentUuid": "b2a7234b_6b77a0e1",
       "revId": "40222ccb507b2cf5dc6608d0b74cdc91c3596963",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705",
       "unresolved": false
