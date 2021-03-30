@@ -23,5 +23,5 @@ import (
 )
 
 func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+	fmt.Println("Let's see if soy templates work!")
 }
