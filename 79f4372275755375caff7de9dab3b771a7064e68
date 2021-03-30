@@ -16,6 +16,24 @@
       "message": "Looks like the template override worked for this change:\nit is \u0027[example] Test for soy templates\u0027,  would be \u0027Change in ..: \u0027 by default.\nhttp://google3/devtools/gerritcodereview/hosted_sites/go/etc/mail/ChangeSubject.soy\nhttp://screen/AagpXaFiwrJiWcJ",
       "revId": "79f4372275755375caff7de9dab3b771a7064e68",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b06f2845_cc1c5fe0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 45043
+      },
+      "writtenOn": "2021-03-30T07:32:05Z",
+      "side": 1,
+      "message": "yep, I received that email, LGTM!",
+      "parentUuid": "ff0296e5_73e644c8",
+      "revId": "79f4372275755375caff7de9dab3b771a7064e68",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
