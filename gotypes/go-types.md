@@ -10,6 +10,13 @@ This document is maintained by Alan Donovan `adonovan@google.com`.
 
 %toc
 
+# Changes in Go 1.18
+
+Go 1.18 introduces generics, and several corresponding new APIs for `go/types`.
+This document is not yet up-to-date for these changes, but a guide to the new
+changes exists at
+[`x/exp/typeparams/example`](https://github.com/golang/exp/tree/master/typeparams/example).
+
 # Introduction
 
 
@@ -55,7 +62,7 @@ constant expressions, as we'll see in
 
 
 
-The [`golang.org/x/tools/go/loader` package](https://godoc.org/golang.org/x/tools/go/loader)
+The [`golang.org/x/tools/go/loader` package](https://pkg.go.dev/golang.org/x/tools/go/loader)
 from the `x/tools` repository is a client of the type
 checker that loads, parses, and type-checks a complete Go program from
 source code.
@@ -110,7 +117,7 @@ the _hello, world_ program, supplied as a string.
 Later examples will be variations on this one, and we'll often omit
 boilerplate details such as parsing.
 To check out and build the examples,
-run `go get github.com/golang/example/gotypes/...`.
+run `go get golang.org/x/example/gotypes/...`.
 
 
 %include pkginfo/main.go
@@ -814,7 +821,7 @@ Use this function instead:
 
 
 For the same reason, you should not use a `Type` as a key in a map.
-The [`golang.org/x/tools/go/types/typeutil` package](https://godoc.org/golang.org/x/tools/go/types/typeutil)
+The [`golang.org/x/tools/go/types/typeutil` package](https://pkg.go.dev/golang.org/x/tools/go/types/typeutil)
 provides a map keyed by types that uses the correct
 equivalence relation.
 
@@ -1787,7 +1794,7 @@ function.
 
 Here's a typical invocation on the standard `encoding/xml` package.
 It reports a number of places where the 7-word
-[`StartElement` type](https://godoc.org/encoding/xml#StartElement)
+[`StartElement` type](https://pkg.go.dev/encoding/xml#StartElement)
 is copied.
 
 
@@ -1843,7 +1850,7 @@ ran a `go install` or `go build -i` command.
 
 
 
-The [`golang.org/tools/x/go/loader` package](https://godoc.org/golang.org/x/tools/go/loader)
+The [`golang.org/tools/x/go/loader` package](https://pkg.go.dev/golang.org/x/tools/go/loader)
 provides an alternative `Importer` that addresses
 some of these problems.
 It loads a complete program from source, performing
@@ -2025,13 +2032,13 @@ of the form "I have an A; I need the corresponding B".
 
 To map **from a `token.Pos` to an `ast.Node`**, call the
 helper function
-[`astutil.PathEnclosingInterval`](https://godoc.org/golang.org/x/tools/go/ast/astutil#PathEnclosingInterval).
+[`astutil.PathEnclosingInterval`](https://pkg.go.dev/golang.org/x/tools/go/ast/astutil#PathEnclosingInterval).
 It returns the enclosing `ast.Node`, and all its ancestors up to
 the root of the file.
 You must know which file `*ast.File` the `token.Pos` belongs to.
 Alternatively, you can search an entire program loaded by the
 `loader` package, using
-[`(*loader.Program).PathEnclosingInterval`](https://godoc.org/golang.org/x/tools/go/loader#Program.PathEnclosingInterval).
+[`(*loader.Program).PathEnclosingInterval`](https://pkg.go.dev/golang.org/x/tools/go/loader#Program.PathEnclosingInterval).
 
 
 
