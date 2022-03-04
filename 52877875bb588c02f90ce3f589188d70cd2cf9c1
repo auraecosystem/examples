@@ -277,6 +277,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf985e75_106b0afc",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 546,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2022-03-04T23:50:18Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "07517b3a_9d88da29",
+      "revId": "52877875bb588c02f90ce3f589188d70cd2cf9c1",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2e745c91_489b8c42",
