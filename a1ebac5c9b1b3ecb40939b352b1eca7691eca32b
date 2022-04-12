@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac40ed60_da85d20a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2022-04-12T02:33:10Z",
+      "side": 1,
+      "message": "The //!+ and //!- lines are processed by gotypes/weave.go, which cares only about the !+ and the !-, not whether there\u0027s a // and not how many spaces follow it.",
+      "revId": "a1ebac5c9b1b3ecb40939b352b1eca7691eca32b",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
