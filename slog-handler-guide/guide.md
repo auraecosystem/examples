@@ -1,0 +1,325 @@
+
+# A Guide to Writing `slog` Handlers
+
+This document is maintained by Jonathan Amsterdam `jba@google.com`.
+
+
+# Contents
+
+%toc
+
+
+# Introduction
+
+The standard library’s `log/slog` package has a two-part design.
+A "frontend," implemented by the `Logger` type,
+gathers stuctured log information like a message, level, and attributes,
+and passes them to a "backend," an implementation of the `Handler` interface.
+The package comes with two built-in handlers that usually should be adequate.
+But you may need to write your own handler, and that is not always straightforward.
+This guide is here to help.
+
+
+# Loggers and Their Handlers
+
+Writing a handler requires an understanding of how the `Logger` and `Handler`
+types work together.
+
+Each logger contains a handler. Certain `Logger` methods do some preliminary work,
+such as gathering key-value pairs into `Attr`s, and then call one or more
+`Handler` methods. These `Logger` methods are `With`,  `WithGroup`,
+and the output methods.
+
+An output method fulfills the main role of a logger: producing log output.
+Here is one example:
+
+    logger.Info("hello", "key", value)
+
+There is an output method for each of four common levels
+(`Debug`, `Info`, `Warn` and `Error`), corresponding methods that take a context
+(`DebugCtx`, `InfoCtx`, `WarnCtx` and `ErrorCtx`) and two more general methods,
+`Log`, and `LogAttrs`.
+
+Each `Logger` output method first calls its handler's `Enabled` method. If that call
+returns true,  the method constructs a `Record` from its arguments and calls
+the handler's `Handle` method.
+
+As a convenience and an optimization, attributes can be added to
+`Logger` by calling the `With` method:
+
+    logger = logger.With("k", v)
+
+This call creates a new `Logger` value with the argument attributes; the
+original remains unchanged.
+All subsequent output from `logger` will include those attributes.
+A logger's `With` method calls its handler's `WithAttrs` method.
+
+The `WithGroup` method is used to avoid duplicate keys in large systems.
+This call creates a new `Logger` value with a group named "g":
+
+    logger = logger.WithGroup("g")
+
+All subsequent keys for `logger` will be qualified by the group name "g".
+Exactly what "qualified" means depends on how the logger's handler formats the
+output.
+The built-in `TextHandler` treats the group as a prefix to the key, separated by
+a dot: `g.k` for a key `k`, for example.
+The built-in `JSONHandler` uses the group as a key for a nested JSON object:
+
+    {"g": {"k": v}}
+
+A logger's `WithGroup` method calls its handler's `WithGroup` method.
+
+
+# Implementing `Handler` Methods
+
+We can now talk about the four `Handler` methods in detail.
+
+## The `Enabled` Method
+
+The `Enabled` method is an optimization that can avoid unnecessary work.
+A `Logger` output method will call `Enabled` before it processes any of its arguments,
+to see if it should proceed.
+
+The signature is
+
+    Enabled(context.Context, Level) bool
+
+The context is available to allow decisions based on the current call stack.
+For example, a custom HTTP request header could specify a minimum level,
+which the server adds to the context used for processing that request.
+A handler's `Enabled` method could report whether the argument level
+is greater than or equal to the context value.
+
+
+Most implementations of `Enabled` will consult a configured minimum level instead.
+For maximum generality, use the `Leveler` type in your configuration, as the
+built-in `HandlerOptions` does:
+
+    Level Leveler
+
+`Leveler` is implemented by both `Level` and `LevelVar`.
+A `Level` value is easy for the user to provide,
+but changing the level of multiple handlers requires tracking them all.
+If the user instead passes a `LevelVar`, then a single change to that `LevelVar`
+will change the behavior of all handlers that contain it.
+Changes to `LevelVar`s are goroutine-safe.
+
+TODO(jba): example handler that implements a minimum level and delegates the other methods.
+
+## The `WithAttrs` Method
+
+One of `slog`'s performance optimizations is support for pre-formatting
+attributes. The `Logger.With` method converts key-value pairs into `Attr`s and
+then calls `Handler.WithAttrs`.
+The handler may store the attributes for later consumption by the `Handle` method,
+or it may take the opportunity to format the attributes now, once,
+rather than doing so repeatedly on each call to `Handle`.
+
+The signature of the `WithAttrs` method is
+
+    WithAttrs(attrs []Attr) Handler
+
+The attributes are the processed key-value pairs passed to `Logger.With`.
+The return value should be a new instance of your handler that contains
+the attributes, possibly pre-formatted.
+
+You must return a new handler rather than modifying the existing one (the method
+receiver). Say the calling code looked like this:
+
+    logger2 := logger1.With("k", v)
+
+If `logger1`s handler were modified, then `logger1` would have the ("k", v)
+attribute. But only `logger2` should have it.
+
+We will show an example implementation of `WithAttrs` below, when we discuss `WithGroup`.
+
+## The `WithGroup` Method
+
+`Logger.WithGroup` calls `Handler.WithGroup` directly, with the same
+argument, the group name.
+A handler should remember the name so it can use it to qualify all subsequent
+attributes.
+
+The signature of `WithGroup` is:
+
+    WithGroup(name string) Handler
+
+Like `WithAttrs`, the `WithGroup` method should return a new handler, not modify
+the receiver.
+
+The implementations of `WithGroup` and `WithAttrs` are intertwined.
+Consider this statement:
+
+    logger = logger.WithGroup("g1").With("k1", 1).WithGroup("g2").With("k2", 2)
+
+Subsequent `logger` output should qualify key "k1" with group "g1",
+and key "k2" with groups "g1" and "g2".
+The order of the `Logger.WithGroup` and `Logger.With` calls must be respected by
+the implementations of `Handler.WithGroup` and `Handler.WithAttrs`.
+
+We will look at two implementations of `WithGroup` and `WithAttrs`, one that pre-formats and
+one that doesn't.
+
+TODO(jba): add examples
+
+## The `Handle` Method
+
+The `Handle` method is passed a `Record` containing all the information to be
+logged for a single call to a `Logger` output method.
+
+The `Handle` method and should deal with it in
+some way.
+One way is to output the `Record` in some format, as `TextHandler`
+and `JSONHandler` do.
+But other options are to modify the `Record` and pass it on to another handler,
+enqueue the `Record` for later processing, or ignore it.
+
+The signature of `Handle` is
+
+    Handle(context.Context, Record) error
+
+The context is provided to support applications that provide logging information
+along the call chain. In a break with usual Go practice, the `Handle` method
+should not treat a canceled context as a signal to stop work.
+
+If `Handle` processes its `Record`, it should follow the rules in the
+[documentation](https://pkg.go.dev/log/slog#Handler.Handle).
+For example, a zero `Time` field should be ignored, as should zero `Attr`s.
+To verify that your handler follows these rules and generally produces proper
+output, use the [testing/slogtest package](https://pkg.go.dev/log/slog).
+
+Before processing the attributes in the `Record`, remember to process the
+attributes from `WithAttrs` calls, qualified by the groups from `WithGroup`
+calls. Then use `Record.Attrs` to process the attributes in the `Record`, also
+qualified by the groups from `WithGroup` calls.
+
+The attributes provided to `Handler.WithAttrs` appear in the order the user passed them
+to `Logger.With`, and `Record.Attrs` traverses attributes in the order the user
+passed them to the `Logger` output method. Handlers are free to reorder or
+de-duplicate the attributes, provided group qualification is preserved.
+
+Your handler can make a single copy of a `Record` with an ordinary Go
+assignment, channel send or function call if it doesn't retain the
+original.
+But if its actions result in more than one copy, it should call `Record.Clone`
+to make the copies so that they don't share state.
+This `Handle` method passes the record to a single handler, so it doesn't require `Clone`:
+
+    type Handler1 struct {
+        h slog.Handler
+        // ...
+    }
+
+    func (h *Handler1) Handle(ctx context.Context, r slog.Record) error {
+        return h.h.Handle(ctx, r)
+    }
+
+This `Handle` method might pass the record to more than one handler, so it
+should use `Clone`:
+
+    type Handler2 struct {
+        hs []slog.Handler
+        // ...
+    }
+
+    func (h *Handler2) Handle(ctx context.Context, r slog.Record) error {
+        for _, hh := range h.hs {
+            if err := hh.Handle(ctx, r.Clone()); err != nil {
+                return err
+            }
+        }
+        return nil
+    }
+
+
+
+TODO(jba): example Handle implementation (YAML-like output)
+
+TODO(jba): example use of slogtest
+
+
+# General Considerations
+
+## Concurrency-Safety
+
+A handler must work properly when a single `Logger` is shared among several
+goroutines.
+That means that mutable state must be protected with a lock or some other mechanism.
+In practice, this is not hard to achieve, because many handlers won't have any
+mutable state.
+
+- The `Enabled` method typically consults only its arguments and a configured
+  level. The level is often either set once initially, or is held in a
+  `LevelVar`, which is already goroutine-safe.
+
+- The `WithAttrs` and `WithGroup` methods should not modify the receiver,
+  for reasons discussed above.
+
+- The `Handle` method typically works only with its arguments and stored fields.
+
+Calls to output methods like `io.Writer.Write` should be synchronized unless
+it can be verified that no locking is needed. Beware of facile claims like
+"Unix writes are atomic"; the situation is a lot more nuanced than that.
+
+Some handlers have legitimate reasons for keeping state.
+For example, a handler might support a `SetLevel` method to change its configured level.
+Or it may wish to output the time between sucessive calls to `Handle`,
+which requires a mutable field holding the last output time.
+Synchronize all accesses to such fields, both reads and writes.
+
+The built-in handlers have no directly mutable state.
+They use a mutex only to sequence calls to their contained `io.Writer`.
+
+## Robustness
+
+Logging is often the debugging technique of last resort. When it is difficult or
+impossible to inspect a system, as is typically the case with a production
+server, logs provide the most detailed way to understand its behavior.
+Therefore, your handler should be robust to bad input.
+
+For example, the usual advice when when a function discovers a problem,
+like an invalid argument, is to panic or return an error.
+Disregard that advice when writing a handler.
+Few things are more frustrating than being unable to debug a problem that
+causes logging to fail;
+better to produce some output, however imperfect, than to produce none at all.
+That is why methods like `Logger.Info` convert programming bugs in their list of
+key-value pairs, like missing values or malformed keys,
+into `Attr`s that contain as much information as possible.
+
+One place to avoid panics is in processing attribute values. A handler that wants
+to format a value will probably switch on the value's kind:
+
+    switch attr.Value.Kind() {
+    case KindString: ...
+    case KindTime: ...
+    // all other Kinds
+    default: ...
+    }
+
+What should happen in the default case, when the handler encounters a `Kind`
+that it doesn't know about? The handler should try to muddle through, perhaps
+by using the result of the value's `String` method. It should not panic or
+return an error.
+(It may also want to signal the problem with some out-of-band mechanism, like an email or a telemetry metric.)
+The most likely explanation for the issue is that a newer version of the `slog` package added
+a `Kind`&mdash;a backwards-compatible change under the Go 1 Compatibility Promise&mdash;and
+the handler wasn't updated. That is certainly a problem, but it shouldn't deprive
+readers of the logs from seeing the rest of the output.
+
+There is one circumstance where returning an error from `Handler.Handle` is appropriate.
+If the output operation itself fails, the best course of action is to report
+this failure by returning the error. For instance, the last two lines of the
+built-in `Handle` methods are
+
+    _, err := h.w.Write(*state.buf)
+    return err
+
+Although the output methods of `Logger` ignore the error, one could write a
+handler that does something with it, perhaps falling back to writing to standard
+error.
+
+## Speed
+
+TODO(jba): discuss
