@@ -2,8 +2,10 @@
 all: README.md
 	go build ./...
 
-README.md: go-types.md weave.go $(wildcard */*.go)
-	go run weave.go go-types.md >README.md
+README.md: go-types.md ../cmd/weave/*.go $(wildcard */*.go)
+	go build -C .. ./cmd/weave
+	../weave go-types.md >README.md
+	rm ../weave
 
 # This is for previewing using github.
 # $HOME/markdown must be a github client.
