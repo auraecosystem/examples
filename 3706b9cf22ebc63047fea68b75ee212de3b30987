@@ -55,6 +55,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1bf4cf8_63f49474",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-12T08:31:38Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "7097efab_b89be958",
+      "revId": "3706b9cf22ebc63047fea68b75ee212de3b30987",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9f0d579_fe0d922a",
@@ -68,6 +86,24 @@
       "writtenOn": "2023-05-11T22:30:00Z",
       "side": 1,
       "message": "go run ../cmd/weave go-types.md \u003e README.md",
+      "revId": "3706b9cf22ebc63047fea68b75ee212de3b30987",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c29927e8_8ef29349",
+        "filename": "gotypes/Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-12T08:31:38Z",
+      "side": 1,
+      "message": "I\u0027m not sure why I thought that wouldn\u0027t work. I\u0027m pretty sure I\u0027ve had issues with .. in package patterns before.\nAnyway, done.",
+      "parentUuid": "f9f0d579_fe0d922a",
       "revId": "3706b9cf22ebc63047fea68b75ee212de3b30987",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
