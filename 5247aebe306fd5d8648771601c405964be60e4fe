@@ -122,6 +122,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "61b43d57_420129c6",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-05-15T21:43:14Z",
+      "side": 1,
+      "message": "Sorry for sowing confusion when I was younger. The extra capitals now look to me like German, or Enlightenment English, compared to the unfussy lowercase we typically use in Go docs. I think it\u0027s more important to be consistent with those docs; we can fix go-types.md another day.",
+      "parentUuid": "bfd0a0ed_d0a85211",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 15
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b1d3a76e_bff96453",
         "filename": "slog-handler-guide/guide.md",
         "patchSetId": 1
@@ -298,6 +322,30 @@
       "side": 1,
       "message": "See above.\n\nhttps://titlecaseconverter.com/rules/ has a few title case variants, none of which match your rule. British vs. US English perhaps?",
       "parentUuid": "7f178108_1beee155",
+      "range": {
+        "startLine": 74,
+        "startChar": 25,
+        "endLine": 74,
+        "endChar": 26
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3015d2df_e4d79d08",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-05-15T21:43:14Z",
+      "side": 1,
+      "message": "Wow, that\u0027s a very thorough comparison. I wasn\u0027t being nearly so rigorous, but if you quickly eyeball the Go spec https://go.dev/ref/spec, for example, you\u0027ll see what I mean. Most of our docs are like that.",
+      "parentUuid": "49394dd0_315132a3",
       "range": {
         "startLine": 74,
         "startChar": 25,
