@@ -55,6 +55,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "81130e57_597eea53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "I had planned to write a handler that outputs YAML. I added a sentence or two about that. I will flesh it out in a subsequent CL, if that\u0027s OK.\n\nI think targeting a specific tool as you suggest would get us bogged down in idiosyncrasies.",
+      "parentUuid": "bfb4162c_bb62ecf4",
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5fef282e_d1818de2",
@@ -68,6 +86,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "their handlers (lowercase)",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 15
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfd0a0ed_d0a85211",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "So we\u0027re not using title case? \n\nI took my cue from go-types.md where you write headings like \"An Example\", \"Identifier Resolution\" and \"Simple Composite Types\" (but you also have \"Basic types\").\n\nWe should be consistent, at least across these two docs.",
+      "parentUuid": "5fef282e_d1818de2",
       "range": {
         "startLine": 23,
         "startChar": 14,
@@ -101,6 +143,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3e53591_1babef50",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1d3a76e_bff96453",
+      "range": {
+        "startLine": 34,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 19
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "db7da3c8_4a530ff5",
@@ -124,6 +190,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bee3a06c_dbb4b2c2",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "db7da3c8_4a530ff5",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 22
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cee09430_e60711bb",
@@ -137,6 +227,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "\"avoid key collisions in large programs by breaking up the namespace\" perhaps?",
+      "range": {
+        "startLine": 57,
+        "startChar": 34,
+        "endLine": 57,
+        "endChar": 72
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d6333c0_40808648",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done, approximately.",
+      "parentUuid": "cee09430_e60711bb",
       "range": {
         "startLine": 57,
         "startChar": 34,
@@ -172,6 +286,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "49394dd0_315132a3",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "See above.\n\nhttps://titlecaseconverter.com/rules/ has a few title case variants, none of which match your rule. British vs. US English perhaps?",
+      "parentUuid": "7f178108_1beee155",
+      "range": {
+        "startLine": 74,
+        "startChar": 25,
+        "endLine": 74,
+        "endChar": 26
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "117a543b_af543795",
         "filename": "slog-handler-guide/guide.md",
         "patchSetId": 1
@@ -183,6 +321,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "\"The `Context` [...] based on contextual information.\"\n\nAvoid the suggestion that the Context is or provides the call stack.",
+      "range": {
+        "startLine": 88,
+        "startChar": 56,
+        "endLine": 88,
+        "endChar": 76
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22c12c62_c099e665",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "117a543b_af543795",
       "range": {
         "startLine": 88,
         "startChar": 56,
@@ -216,6 +378,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e868b7ef_c0875e34",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e5be81f_f150c248",
+      "range": {
+        "startLine": 92,
+        "startChar": 45,
+        "endLine": 92,
+        "endChar": 46
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5183801b_2fde4d6a",
@@ -235,6 +421,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "df11849a_3885b361",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "reworded",
+      "parentUuid": "5183801b_2fde4d6a",
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e8ba7f35_cfde080a",
         "filename": "slog-handler-guide/guide.md",
         "patchSetId": 1
@@ -246,6 +450,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "Start with WithAttrs and explain that With is a simple convenience wrapper around it.",
+      "range": {
+        "startLine": 113,
+        "startChar": 12,
+        "endLine": 114,
+        "endChar": 31
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f27b71ab_88d69acd",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "These sections on Handler methods all begin by putting the Handler method in context by pointing out its relationship to the user-facing Logger methods. They hark back to statements in the earlier \"Loggers and their handlers\" section. I\u0027d like to maintain the parallelism here. What bothers you about this sentence? Can we reword it but keep it near the beginning of the section?\n\nFWIW, I don\u0027t see see Logger.With as a convenience wrapper around Handler.WithAttrs. The first method is part of the frontend, the second part of the backend. If this were a relationship of convenience, then one would think a user might have reason to call Handler.WithAttrs; but they never should.\n\nI see why you might think that though: Logger.With takes ...any and Handler.WithAttrs takes []Attr. What is missing is Logger.WithAttrs, a frontend method that takes ...Attr. That is a deliberate omission: Logger.With is not on the critical path, so it doesn\u0027t need a low-alloc variant like Logger.LogAttrs. You can still pass individual Attrs to Logger.With if you want. Although admittedly you can\u0027t use a []Attr. If people wanted to to pass []Attrs to Logger.With I would add Logger.WithAttrs, not tell them  to use Handler.WithAttrs.",
+      "parentUuid": "e8ba7f35_cfde080a",
       "range": {
         "startLine": 113,
         "startChar": 12,
@@ -302,6 +530,54 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "da28db32_001f1fad",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e89d020b_832227f1",
+      "range": {
+        "startLine": 127,
+        "startChar": 0,
+        "endLine": 127,
+        "endChar": 3
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78c00616_22e6159d",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ebc11ce6_c5a111fc",
+      "range": {
+        "startLine": 127,
+        "startChar": 70,
+        "endLine": 127,
+        "endChar": 80
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "70f4ca31_13d515bc",
@@ -315,6 +591,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "This section is framed too much around the wrong way of doing it. More positively:\n\n\"WithAttrs must return a new handler with the additional attributes, leaving the original handler (its receiver) unchanged. For example, this call:\n\n logger2 :\u003d logger1.With(\"k\", v)\n\ncreates a new logger, logger2, with an additional attribute, but has no effect on logger1.\"",
+      "range": {
+        "startLine": 128,
+        "startChar": 11,
+        "endLine": 128,
+        "endChar": 14
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3b1964a_50b3b5c4",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "That\u0027s very nice. Thanks. Done.",
+      "parentUuid": "70f4ca31_13d515bc",
       "range": {
         "startLine": 128,
         "startChar": 11,
@@ -350,6 +650,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "47e833dd_5d4838de",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Hyphen removed, case left pending title discussion.",
+      "parentUuid": "4eb67669_42347ae5",
+      "range": {
+        "startLine": 244,
+        "startChar": 14,
+        "endLine": 244,
+        "endChar": 16
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d6e1cd3f_580c3edd",
         "filename": "slog-handler-guide/guide.md",
         "patchSetId": 1
@@ -361,6 +685,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "concurrency",
+      "range": {
+        "startLine": 254,
+        "startChar": 31,
+        "endLine": 254,
+        "endChar": 40
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06443ff9_0aeb323d",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d6e1cd3f_580c3edd",
       "range": {
         "startLine": 254,
         "startChar": 31,
@@ -394,6 +742,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "12d65fbe_da88fe11",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "535fcded_c9aaab8f",
+      "range": {
+        "startLine": 266,
+        "startChar": 87,
+        "endLine": 266,
+        "endChar": 88
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b29716a_78b12804",
@@ -407,6 +779,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "\"Or it might output\" (handlers don\u0027t have wishes)",
+      "range": {
+        "startLine": 267,
+        "startChar": 6,
+        "endLine": 267,
+        "endChar": 18
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd495d87_4d51f3f4",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b29716a_78b12804",
       "range": {
         "startLine": 267,
         "startChar": 6,
@@ -440,6 +836,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e70f5fa3_65b3e8d7",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3517ab45_af62c26f",
+      "range": {
+        "startLine": 305,
+        "startChar": 78,
+        "endLine": 305,
+        "endChar": 89
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8072bec1_d303dea4",
@@ -453,6 +873,30 @@
       "writtenOn": "2023-05-12T16:42:18Z",
       "side": 1,
       "message": "a new Kind",
+      "range": {
+        "startLine": 307,
+        "startChar": 0,
+        "endLine": 307,
+        "endChar": 1
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a633c7f_498d27d5",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-15T20:41:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8072bec1_d303dea4",
       "range": {
         "startLine": 307,
         "startChar": 0,
