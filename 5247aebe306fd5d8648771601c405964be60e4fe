@@ -144,6 +144,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca36a6c7_bd6b9ccf",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-16T00:05:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "61b43d57_420129c6",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 15
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b1d3a76e_bff96453",
@@ -346,6 +370,30 @@
       "side": 1,
       "message": "Wow, that\u0027s a very thorough comparison. I wasn\u0027t being nearly so rigorous, but if you quickly eyeball the Go spec https://go.dev/ref/spec, for example, you\u0027ll see what I mean. Most of our docs are like that.",
       "parentUuid": "49394dd0_315132a3",
+      "range": {
+        "startLine": 74,
+        "startChar": 25,
+        "endLine": 74,
+        "endChar": 26
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54288802_f8ffbd37",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-16T00:05:29Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3015d2df_e4d79d08",
       "range": {
         "startLine": 74,
         "startChar": 25,
