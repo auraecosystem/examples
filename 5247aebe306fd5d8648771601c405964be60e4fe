@@ -533,6 +533,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b20116a_8fd101ed",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-18T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df11849a_3885b361",
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8ba7f35_cfde080a",
@@ -758,6 +776,30 @@
       "side": 1,
       "message": "Hyphen removed, case left pending title discussion.",
       "parentUuid": "4eb67669_42347ae5",
+      "range": {
+        "startLine": 244,
+        "startChar": 14,
+        "endLine": 244,
+        "endChar": 16
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86e52f99_a4a558a0",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-05-18T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47e833dd_5d4838de",
       "range": {
         "startLine": 244,
         "startChar": 14,
