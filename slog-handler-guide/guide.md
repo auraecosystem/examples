@@ -257,8 +257,7 @@ the original handler (its receiver) unchanged. For example, this call:
 creates a new logger, `logger2`, with an additional attribute, but has no
 effect on `logger1`.
 
-
-We will show an example implementation of `WithAttrs` below, when we discuss `WithGroup`.
+We will show example implementations of `WithAttrs` below, when we discuss `WithGroup`.
 
 ## The `WithGroup` method
 
@@ -287,7 +286,51 @@ the implementations of `Handler.WithGroup` and `Handler.WithAttrs`.
 We will look at two implementations of `WithGroup` and `WithAttrs`, one that pre-formats and
 one that doesn't.
 
-TODO(jba): add IndentHandler examples
+### Without pre-formatting
+
+Our first implementation will collect the information from `WithGroup` and
+`WithAttrs` calls to build up a slice of group names and attribute lists,
+and loop over that slice in `Handle`. We start with a struct that can hold
+either a group name or some attributes:
+
+%include indenthandler2/indent_handler.go gora -
+
+Then we add a slice of `groupOrAttrs` to our handler:
+
+%include indenthandler2/indent_handler.go IndentHandler -
+
+As stated above, The `WithGroup` and `WithAttrs` methods should not modify their
+receiver.
+To that end, we define a method that will copy our handler struct
+and append one `groupOrAttrs` to the copy:
+
+%include indenthandler2/indent_handler.go withgora -
+
+Most of the fields of `IndentHandler` can be copied shallowly, but the slice of
+`groupOrAttrs` requires a deep copy, or the clone and the original will point to
+the same underlying array. If we used `append` instead of making an explicit
+copy, we would introduce that subtle aliasing bug.
+
+Using `withGroupOrAttrs`, the `With` methods are easy:
+
+%include indenthandler2/indent_handler.go withs -
+
+The `Handle` method can now process the groupOrAttrs slice after
+the built-in attributes and before the ones in the record:
+
+%include indenthandler2/indent_handler.go handle -
+
+The asymptotically conscious reader will have noticed that our algorithm for
+recording `WithGroup` and `WithAttrs` information is quadratic in the
+number of calls to those methods, because of the repeated copying.
+That is unlikely to matter in practice, but if it bothers you,
+you can use a linked list instead,
+which `Handle` will have to reverse or visit recursively.
+See [github.com/jba/slog/withsupport](https://github.com/jba/slog/withsupport) for an implementation.
+
+### With pre-formatting
+
+TODO(jba): write
 
 ## Testing
 
