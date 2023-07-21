@@ -330,7 +330,62 @@ See [github.com/jba/slog/withsupport](https://github.com/jba/slog/withsupport) f
 
 ### With pre-formatting
 
-TODO(jba): write
+Our second implementation implements pre-formatting.
+To pre-format the arguments to `WithAttrs`, we need to keep track of some
+additional state in the `IndentHandler` struct.
+
+%include indenthandler3/indent_handler.go IndentHandler -
+
+Mainly, we need a buffer to hold the pre-formatted data.
+But we also need to keep track of which groups
+we've seen but haven't output yet. We'll call those groups "unopened."
+We also need to track how many groups we've opened, which we can do
+with a simple counter, since an opened group's only effect is to change the
+indentation level.
+
+The `WithGroup` implementation is a lot like the previous one: just remember the
+new group, which is unopened initially.
+
+%include indenthandler3/indent_handler.go WithGroup -
+
+`WithAttrs` does all the pre-formatting:
+
+%include indenthandler3/indent_handler.go WithAttrs -
+
+It first opens any unopened groups. This handles calls like:
+
+    logger.WithGroup("g").WithGroup("h").With("a", 1)
+
+Here, `WithAttrs` must output "g" and "h" before "a". Since a group established
+by `WithGroup` is in effect for the rest of the log line, `WithAttrs` increments
+the indentation level for each group it opens.
+
+Lastly, `WithAttrs` formats its argument attributes, using the same `appendAttr`
+method we saw above.
+
+It's the `Handle` method's job to insert the pre-formatted material in the right
+place, which is after the built-in attributes and before the ones in the record:
+
+%include indenthandler3/indent_handler.go Handle -
+
+It must also open any groups that haven't yet been opened. The logic covers
+log lines like this one:
+
+    logger.WithGroup("g").Info("msg", "a", 1)
+
+where "g" is unopened before `Handle` is called and must be written to produce
+the correct output:
+
+    level: INFO
+    msg: "msg"
+    g:
+        a: 1
+
+The check for `r.NumAttrs() > 0` handles this case:
+
+    logger.WithGroup("g").Info("msg")
+
+Here there are no record attributes, so no group to open.
 
 ## Testing
 
