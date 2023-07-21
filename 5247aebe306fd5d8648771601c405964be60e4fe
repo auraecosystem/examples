@@ -598,6 +598,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e395816_8cbf270f",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-07-21T12:26:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f27b71ab_88d69acd",
+      "range": {
+        "startLine": 113,
+        "startChar": 12,
+        "endLine": 114,
+        "endChar": 31
+      },
+      "revId": "5247aebe306fd5d8648771601c405964be60e4fe",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ebc11ce6_c5a111fc",
