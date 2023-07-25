@@ -100,6 +100,30 @@
       },
       "revId": "0a178bde118e655f182fb2fd68ff5fe806f8bc50",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9177b27d_d6fd07e5",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 9711
+      },
+      "writtenOn": "2023-07-25T21:04:00Z",
+      "side": 1,
+      "message": "Much better, thanks, although you seem to have changed the generated file but not the original in this cl?",
+      "parentUuid": "3207bef9_59872820",
+      "range": {
+        "startLine": 296,
+        "startChar": 0,
+        "endLine": 296,
+        "endChar": 45
+      },
+      "revId": "0a178bde118e655f182fb2fd68ff5fe806f8bc50",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
