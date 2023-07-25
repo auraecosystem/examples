@@ -78,6 +78,30 @@
       },
       "revId": "d49c5ecd431f7987c878ce1031ad93bd3721e777",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41d79cbc_599d3f3a",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-07-25T23:42:31Z",
+      "side": 1,
+      "message": "Agreed! Sometimes I can\u0027t resist.",
+      "parentUuid": "3d79225f_95dc0d41",
+      "range": {
+        "startLine": 323,
+        "startChar": 0,
+        "endLine": 323,
+        "endChar": 35
+      },
+      "revId": "d49c5ecd431f7987c878ce1031ad93bd3721e777",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
