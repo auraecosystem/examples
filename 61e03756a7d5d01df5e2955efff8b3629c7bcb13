@@ -107,6 +107,24 @@
       "parentUuid": "fa7fe17c_0182280b",
       "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88dde871_4281a658",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-07-26T18:35:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "0b44d78d_785c1cfd",
+      "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
