@@ -89,6 +89,24 @@
       "parentUuid": "3f4d0d6e_20fb6a5a",
       "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b44d78d_785c1cfd",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 9711
+      },
+      "writtenOn": "2023-07-26T18:18:36Z",
+      "side": 1,
+      "message": "Thanks, I think that makes it much more useful.",
+      "parentUuid": "fa7fe17c_0182280b",
+      "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
