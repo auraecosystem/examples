@@ -71,6 +71,24 @@
       "parentUuid": "b4f8588b_10cb13c6",
       "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa7fe17c_0182280b",
+        "filename": "slog-handler-guide/guide.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-07-26T00:29:16Z",
+      "side": 1,
+      "message": "Here is the formatted output of the whole guide so far:\nhttps://github.com/jba/markdown",
+      "parentUuid": "3f4d0d6e_20fb6a5a",
+      "revId": "61e03756a7d5d01df5e2955efff8b3629c7bcb13",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
