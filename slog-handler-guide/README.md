@@ -150,9 +150,7 @@ Changes to `LevelVar`s are goroutine-safe.
 The mutex will be used to ensure that writes to the `io.Writer` happen atomically.
 Unusually, `IndentHandler` holds a pointer to a `sync.Mutex` rather than holding a
 `sync.Mutex` directly.
-There is a good reason for that, which we'll explain later.
-
-TODO(jba): add link to that later explanation.
+There is a good reason for that, which we'll explain [later](#getting-the-mutex-right).
 
 Our handler will need additional state to track calls to `WithGroup` and `WithAttrs`.
 We will describe that state when we get to those methods.
@@ -507,6 +505,33 @@ That is unlikely to matter in practice, but if it bothers you,
 you can use a linked list instead,
 which `Handle` will have to reverse or visit recursively.
 See [github.com/jba/slog/withsupport](https://github.com/jba/slog/withsupport) for an implementation.
+
+#### Getting the mutex right
+
+Let us revisit the last few lines of `Handle`:
+
+	h.mu.Lock()
+	defer h.mu.Unlock()
+	_, err := h.out.Write(buf)
+    return err
+
+This code hasn't changed, but we can now appreciate why `h.mu` is a
+pointer to a `sync.Mutex`. Both `WithGroup` and `WithAttrs` copy the handler.
+Both copies point to the same mutex.
+If the copy and the original used different mutexes and were used concurrently,
+then their output could be interleaved, or some output could be lost.
+Code like this:
+
+    l2 := l1.With("a", 1)
+    go l1.Info("hello")
+    l2.Info("goodbye")
+
+could produce output like this:
+
+    hegoollo a=dbye1
+
+See [this bug report](https://go.dev/issue/61321) for more detail.
+
 
 ### With pre-formatting
 
