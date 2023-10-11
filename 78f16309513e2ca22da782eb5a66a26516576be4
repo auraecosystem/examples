@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "52f9c2ec_d79ec386",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2023-10-11T22:35:32Z",
+      "side": 1,
+      "message": "I don\u0027t think we should direct people toward the deprecated go/packages mode values. I\u0027d guess the argument for the new mode API is that the values are easier to remember: just request the fields that you use. If we\u0027re going to recommend the old APIs, we should file a proposal to un-deprecate.\n\nBut as of now, my experience is that the new API is easier to use.",
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d43ba460_54cfb712",
         "filename": "gotypes/doc/main.go",
         "patchSetId": 2
