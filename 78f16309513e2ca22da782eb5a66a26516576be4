@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d43ba460_54cfb712",
+        "filename": "gotypes/doc/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2023-10-11T22:30:47Z",
+      "side": 1,
+      "message": "`packages.NeedSyntax|packages.NeedTypes`",
+      "range": {
+        "startLine": 24,
+        "startChar": 32,
+        "endLine": 24,
+        "endChar": 51
+      },
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6717c80a_66d80ebb",
+        "filename": "gotypes/hugeparam/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2023-10-11T22:30:47Z",
+      "side": 1,
+      "message": "`packages.NeedSyntax|packages.NeedTypesInfo|packages.NeedTypesSizes`",
+      "range": {
+        "startLine": 58,
+        "startChar": 41,
+        "endLine": 58,
+        "endChar": 51
+      },
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
