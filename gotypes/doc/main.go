@@ -4,12 +4,11 @@ package main
 import (
 	"fmt"
 	"go/ast"
-	"go/parser"
 	"log"
 	"os"
 
-	// TODO: these will use std go/types after Feb 2016
-	"golang.org/x/tools/go/loader"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/typeutil"
 )
 
@@ -20,19 +19,22 @@ func main() {
 	//!+part1
 	pkgpath, name := os.Args[1], os.Args[2]
 
-	// The loader loads a complete Go program from source code.
-	conf := loader.Config{ParserMode: parser.ParseComments}
-	conf.Import(pkgpath)
-	lprog, err := conf.Load()
+	// Load typed syntax for the specified packages,
+	// and dependencies from export data.
+	conf := &packages.Config{Mode: packages.LoadSyntax}
+	pkgs, err := packages.Load(conf, pkgpath)
 	if err != nil {
-		log.Fatal(err) // load error
+		log.Fatal(err) // failed to load anything
+	}
+	if packages.PrintErrors(pkgs) > 0 {
+		os.Exit(1) // some packages contained errors
 	}
 
 	// Find the package and package-level object.
-	pkg := lprog.Package(pkgpath).Pkg
-	obj := pkg.Scope().Lookup(name)
+	pkg := pkgs[0]
+	obj := pkg.Types.Scope().Lookup(name)
 	if obj == nil {
-		log.Fatalf("%s.%s not found", pkg.Path(), name)
+		log.Fatalf("%s.%s not found", pkg.Types.Path(), name)
 	}
 	//!-part1
 	//!+part2
@@ -40,20 +42,26 @@ func main() {
 	// Print the object and its methods (incl. location of definition).
 	fmt.Println(obj)
 	for _, sel := range typeutil.IntuitiveMethodSet(obj.Type(), nil) {
-		fmt.Printf("%s: %s\n", lprog.Fset.Position(sel.Obj().Pos()), sel)
+		fmt.Printf("%s: %s\n", pkg.Fset.Position(sel.Obj().Pos()), sel)
 	}
 
 	// Find the path from the root of the AST to the object's position.
 	// Walk up to the enclosing ast.Decl for the doc comment.
-	_, path, _ := lprog.PathEnclosingInterval(obj.Pos(), obj.Pos())
-	for _, n := range path {
-		switch n := n.(type) {
-		case *ast.GenDecl:
-			fmt.Println("\n", n.Doc.Text())
-			return
-		case *ast.FuncDecl:
-			fmt.Println("\n", n.Doc.Text())
-			return
+	for _, file := range pkg.Syntax {
+		pos := obj.Pos()
+		if file.FileStart <= pos && pos < file.FileEnd {
+			continue // not in this file
+		}
+		path, _ := astutil.PathEnclosingInterval(file, pos, pos)
+		for _, n := range path {
+			switch n := n.(type) {
+			case *ast.GenDecl:
+				fmt.Println("\n", n.Doc.Text())
+				return
+			case *ast.FuncDecl:
+				fmt.Println("\n", n.Doc.Text())
+				return
+			}
 		}
 	}
 	//!-part2
