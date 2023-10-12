@@ -54,6 +54,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "195d0dcc_8d412b9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-10-12T14:37:47Z",
+      "side": 1,
+      "message": "I think there are at least two bugs here: one was fixed when I upgraded x/tools in go.mod; the other I just reported as https://github.com/golang/go/issues/63517.\n\nThis is a tutorial. Rather than open this can of worms for what is essentially just a performance optimization, I\u0027m going to use the \"give me everything\" mode here. Readers will want to squirrel around and experiment with the API, and gaps will make that difficult. They can read the docs later if they want to get fancy.",
+      "parentUuid": "4632e1a7_e8dc9107",
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d43ba460_54cfb712",
@@ -77,6 +95,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3df78675_9b8751ed",
+        "filename": "gotypes/doc/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-10-12T14:37:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d43ba460_54cfb712",
+      "range": {
+        "startLine": 24,
+        "startChar": 32,
+        "endLine": 24,
+        "endChar": 51
+      },
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6717c80a_66d80ebb",
@@ -90,6 +132,30 @@
       "writtenOn": "2023-10-11T22:30:47Z",
       "side": 1,
       "message": "`packages.NeedSyntax|packages.NeedTypesInfo|packages.NeedTypesSizes`",
+      "range": {
+        "startLine": 58,
+        "startChar": 41,
+        "endLine": 58,
+        "endChar": 51
+      },
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc068792_8ac07b89",
+        "filename": "gotypes/hugeparam/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-10-12T14:37:47Z",
+      "side": 1,
+      "message": "Aha, but if you don\u0027t also specify NeedTypes then for some reason the TypesInfo and Syntax fields are nil. See https://github.com/golang/go/issues/63517.",
+      "parentUuid": "6717c80a_66d80ebb",
       "range": {
         "startLine": 58,
         "startChar": 41,
