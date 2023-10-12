@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e7900f2e_7d4bec77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2023-10-12T02:45:22Z",
+      "side": 1,
+      "message": "I recognize the irony of replacing one deprecated symbol by another, but I do think the fine-grained mode bits were a mistake. Literally every time I try to use them I get it wrong several times before getting it right. The recursive definitions of the compound values makes it extra annoying to expand out the definition and subtract the bits you don\u0027t need.\n\n\u003e just request the fields that you use.\n\nIt\u0027s never that simple though. IIRC, when I prepared this CL, failing to request NeedImports, which I didn\u0027t actually reference, caused the Types.Scope to be empty (though perhaps that was due to the old version of x/tools at that moment).\n\nMore generally, each of these flags doubles the number of paint shades of Package variants. We don\u0027t want to get into the habit of saying \"Precondition: Mode includes at least NeedXYZ...\" on any function that accepts a Package.\n\nAlso, the compound Need values are shorter.\n\nI contend that in practice there are only three combinations that matter:\n- metadata for initial package and all deps.\n- typed syntax for requested packages, with dependencies\u0027 types from export data.\n- typed syntax for everything.\n\nI was on the cusp of filing said proposal but then cooled off. Now thinking about it has made me mad again, dammit, so I will file that proposal. ;-)",
+      "parentUuid": "52f9c2ec_d79ec386",
+      "revId": "78f16309513e2ca22da782eb5a66a26516576be4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d43ba460_54cfb712",
         "filename": "gotypes/doc/main.go",
         "patchSetId": 2
