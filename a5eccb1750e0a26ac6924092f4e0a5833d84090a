@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6ad0dc21_a4d0d97c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2023-12-18T17:36:32Z",
+      "side": 1,
+      "message": "change to\n\n   slog-handler-guide/README.md: fix word duplication",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 22
+      },
+      "revId": "a5eccb1750e0a26ac6924092f4e0a5833d84090a",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "449303b3_b3a46e89",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
