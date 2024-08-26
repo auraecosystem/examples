@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "810050f3_d8b3eede",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-26T12:46:18Z",
+      "side": 1,
+      "message": "Thanks! PTAL at the response to the license comment and resolve if LGTY",
+      "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "adbced56_369d2b5d",
@@ -14,6 +31,24 @@
       "writtenOn": "2024-08-24T00:44:44Z",
       "side": 1,
       "message": "Missing copyright header.\n\nAll the files in the Go repos should have copyright headers.",
+      "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37d734d4_750c2305",
+        "filename": "ragserver/ragserver/json.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-26T12:46:18Z",
+      "side": 1,
+      "message": "No problem. This rule isn\u0027t consistently followed in this repo, so I wasn\u0027t sure. I went ahead and added the shortened copyright header found in other files in this repo (it\u0027s different from the standard one we use in the main repo)",
+      "parentUuid": "adbced56_369d2b5d",
       "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -35,6 +70,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bb386f2_c2ee1dfa",
+        "filename": "ragserver/ragserver/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-26T12:46:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d8c18e2_e7c80076",
+      "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9082caf0_818788ab",
@@ -52,6 +105,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a15b2ba_aca798aa",
+        "filename": "ragserver/ragserver/main.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-26T12:46:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9082caf0_818788ab",
+      "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c9696b9_3ac3fa4a",
@@ -65,6 +136,24 @@
       "writtenOn": "2024-08-24T00:44:44Z",
       "side": 1,
       "message": "This file could use a comment explaining what it\u0027s for.  I guess it\u0027s a set of example documents.  It\u0027s mentioned in the README but not prominently.",
+      "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe4b93a1_b6dc6927",
+        "filename": "ragserver/tests/add-documents.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-26T12:46:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c9696b9_3ac3fa4a",
       "revId": "0ea35fb0f426bd11fcf4a2303d39bd10ec47f2f0",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
