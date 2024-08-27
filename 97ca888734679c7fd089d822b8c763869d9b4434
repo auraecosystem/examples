@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf9d0b2a_1d1e521e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-27T14:26:48Z",
+      "side": 1,
+      "message": "Hi Jonathan, PTAL at this sample we\u0027re working on (for a Go Blog post on using Go for wrangling LLMs/embeddings/RAGs).\n\nCompare with the other variants in ragserver/ragserver and ragserver/ragserver-langchaingo in the same repository. The README file is a good introduction\n\nWDYT about the use of genkit Go in this example? Should we be using more of Genkit somehow? It wasn\u0027t clear to me if the other concepts/tools of Genkit would be applicable here (note that I want all 3 variants of the server to be API-compatible).",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
