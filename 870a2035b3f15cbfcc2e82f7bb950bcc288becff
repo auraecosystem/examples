@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d657f2d0_e4aa2c88",
+        "filename": "ragserver/ragserver-langchaingo/go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 5206
+      },
+      "writtenOn": "2024-08-27T13:44:09Z",
+      "side": 1,
+      "message": "Why are there multiple versions of some packages?  Does \"go mod tidy\" remove any lines?",
+      "revId": "870a2035b3f15cbfcc2e82f7bb950bcc288becff",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34e2b2a7_f99e446c",
+        "filename": "ragserver/ragserver-langchaingo/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 5206
+      },
+      "writtenOn": "2024-08-27T13:44:09Z",
+      "side": 1,
+      "message": "This comment seems like it is in the wrong place--didn\u0027t we search weaviate just a couple of lines up?",
+      "revId": "870a2035b3f15cbfcc2e82f7bb950bcc288becff",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
