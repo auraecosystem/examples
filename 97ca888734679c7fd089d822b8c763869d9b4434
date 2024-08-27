@@ -16,6 +16,227 @@
       "message": "Hi Jonathan, PTAL at this sample we\u0027re working on (for a Go Blog post on using Go for wrangling LLMs/embeddings/RAGs).\n\nCompare with the other variants in ragserver/ragserver and ragserver/ragserver-langchaingo in the same repository. The README file is a good introduction\n\nWDYT about the use of genkit Go in this example? Should we be using more of Genkit somehow? It wasn\u0027t clear to me if the other concepts/tools of Genkit would be applicable here (note that I want all 3 variants of the server to be API-compatible).",
       "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4af2cdce_9543ce92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "I don\u0027t think there\u0027s anything wrong with the genkit (except not calling genkit.Init). But you\u0027re not seeing the full power of genkit, which is the UI, tracing and monitoring, etc. Maybe that\u0027s fine for this small example.",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d67e0bd2_57079f39",
+        "filename": "ragserver/ragserver-genkit/json.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "nit: put target second to match the arg order of json.Umarshal, etc.",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 4
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "51d400e5_eb615619",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/json.go",
+              "range": {
+                "startLine": 17,
+                "startChar": 0,
+                "endLine": 18,
+                "endChar": 0
+              },
+              "replacement": "func readRequestJSON(target interface{}, req *http.Request) error {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac2a33b0_50b5579f",
+        "filename": "ragserver/ragserver-genkit/json.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "return dec.Decode(...)",
+      "range": {
+        "startLine": 29,
+        "startChar": 1,
+        "endLine": 33,
+        "endChar": 1
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "7955cbec_3f3769c4",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/json.go",
+              "range": {
+                "startLine": 29,
+                "startChar": 0,
+                "endLine": 33,
+                "endChar": 0
+              },
+              "replacement": "\treturn dec.Decode(target)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e2da2c3_4b5469f1",
+        "filename": "ragserver/ragserver-genkit/json.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "s/interface{}/any/",
+      "fixSuggestions": [
+        {
+          "fixId": "c0588a88_c8e3642b",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/json.go",
+              "range": {
+                "startLine": 36,
+                "startChar": 0,
+                "endLine": 37,
+                "endChar": 0
+              },
+              "replacement": "func renderJSON(w http.ResponseWriter, v any) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1298e3e_46b29fc8",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "inconsistent: Cfg vs. Config",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d3fe39f_672d0abb",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "Don\u0027t you have to call genkit.Init?",
+      "fixSuggestions": [
+        {
+          "fixId": "e353a1ff_003a1ac8",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/main.go",
+              "range": {
+                "startLine": 62,
+                "startChar": 0,
+                "endLine": 62,
+                "endChar": 0
+              },
+              "replacement": "\terr \u003d googleai.Init(ctx, \u0026googleai.Config{\n\t\tAPIKey: os.Getenv(\"GEMINI_API_KEY\"),\n\t})\n\tif err !\u003d nil {\n\t\tlog.Fatal(err)\n\t}\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5fb8811_d54e1887",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-08-27T17:03:36Z",
+      "side": 1,
+      "message": "Isn\u0027t it unusual to have a GET with a body? I usually think of GET having everything in the URL, and POST using a body.",
+      "fixSuggestions": [
+        {
+          "fixId": "48eeaed0_17f481f5",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/main.go",
+              "range": {
+                "startLine": 72,
+                "startChar": 0,
+                "endLine": 73,
+                "endChar": 0
+              },
+              "replacement": "\tmux.HandleFunc(\"POST /query/\", server.queryHandler)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
