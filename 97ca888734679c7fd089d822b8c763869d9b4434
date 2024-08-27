@@ -35,6 +35,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "28831b93_d0905b94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-08-27T17:51:34Z",
+      "side": 1,
+      "message": "I would want to use more of Genkit, but how? Should my server have been a \"flow\"? \n\nFor tracing/monitoring, I think it\u0027s OK to say that these are things Genkit offers for more advanced use cases",
+      "parentUuid": "4af2cdce_9543ce92",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d67e0bd2_57079f39",
@@ -206,6 +224,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2e3f625e_e2a0c2f3",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-08-27T17:51:34Z",
+      "side": 1,
+      "message": "I\u0027m not sure... it definitely works without, maybe because I don\u0027t have any flows?",
+      "parentUuid": "6d3fe39f_672d0abb",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a5fb8811_d54e1887",
         "filename": "ragserver/ragserver-genkit/main.go",
         "patchSetId": 1
@@ -235,6 +271,24 @@
           ]
         }
       ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "176582fa_3315b369",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-08-27T17:51:34Z",
+      "side": 1,
+      "message": "Hmm... how would you recommend I structure this? Make /query a POST endpoint (even though it\u0027s idempotent and doesn\u0027t affect anything)? Or alternatively should the query be something like a URL param of a GET request instead of a body?",
+      "parentUuid": "a5fb8811_d54e1887",
       "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
