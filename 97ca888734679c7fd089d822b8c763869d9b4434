@@ -291,6 +291,24 @@
       "parentUuid": "a5fb8811_d54e1887",
       "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c596d43_9344001f",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-08-27T18:13:24Z",
+      "side": 1,
+      "message": "I guess \"doesn\u0027t affect anything\" isn\u0027t true. It queries other servers (embedding, LLM), so it\u0027s pretty complex processing. AFAIU, this means it should probably be a POST with the query itself as the body (JSON). Does that sound reasonable?",
+      "parentUuid": "176582fa_3315b369",
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
