@@ -363,6 +363,41 @@
       "parentUuid": "3c596d43_9344001f",
       "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbf34163_501911ae",
+        "filename": "ragserver/ragserver-genkit/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 3591444
+      },
+      "writtenOn": "2024-08-27T19:21:54Z",
+      "side": 1,
+      "message": "you can just call `genResp.Text()` to get the text from the response",
+      "fixSuggestions": [
+        {
+          "fixId": "29081301_7edb5ba8",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "ragserver/ragserver-genkit/main.go",
+              "range": {
+                "startLine": 161,
+                "startChar": 0,
+                "endLine": 167,
+                "endChar": 0
+              },
+              "replacement": "\trenderJSON(w, genResp.Text())\n"
+            }
+          ]
+        }
+      ],
+      "revId": "97ca888734679c7fd089d822b8c763869d9b4434",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
