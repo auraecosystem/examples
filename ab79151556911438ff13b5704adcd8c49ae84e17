@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7c89ea9_f0deeed1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-08-27T21:15:44Z",
+      "side": 1,
+      "message": "Thanks for the comments!\n\nIan - I will update the other variants with the changes proposed here after this CL lands, and will send out a separate CL for those",
+      "revId": "ab79151556911438ff13b5704adcd8c49ae84e17",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
