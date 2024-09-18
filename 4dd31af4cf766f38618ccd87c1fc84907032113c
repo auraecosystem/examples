@@ -51,6 +51,24 @@
       "parentUuid": "1f94897e_30ad6f09",
       "revId": "4dd31af4cf766f38618ccd87c1fc84907032113c",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f5a4c03_9a0c262b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6005
+      },
+      "writtenOn": "2024-09-18T13:58:25Z",
+      "side": 1,
+      "message": "Yeah, let\u0027s do it on the builder side then. This does mean a user trying to build the example on a 32-bit port will get a build error in a dependency, but that seems like the less bad trade-off.\n\nWill soon mail https://chromium-review.googlesource.com/q/I4e1eecbb21b4a4cc2b010dad7cef47453c9f589f to opt this out of compile-only testing on 32-bit ports.",
+      "parentUuid": "b5facd39_94b723ae",
+      "revId": "4dd31af4cf766f38618ccd87c1fc84907032113c",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
