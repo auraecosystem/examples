@@ -33,6 +33,24 @@
       "message": "Honestly, it seems like a shame to add these to user-visible examples just to work around quirks in our build infrastructure\n\nUsers are expected to just copy paste code from examples, and having these build constraints will be confusing",
       "revId": "4dd31af4cf766f38618ccd87c1fc84907032113c",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5facd39_94b723ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-09-18T13:30:17Z",
+      "side": 1,
+      "message": "These are just examples, after all. We don\u0027t run them - only verify that they build\n\nWould it be reasonable to configure our builders to build examples just on the 64-bit linux builders and nothing else?",
+      "parentUuid": "1f94897e_30ad6f09",
+      "revId": "4dd31af4cf766f38618ccd87c1fc84907032113c",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
