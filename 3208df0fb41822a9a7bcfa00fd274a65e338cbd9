@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bed5b0a6_b43fd14b",
+        "filename": "gotypes/go-types.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1087,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2024-10-14T15:50:53Z",
+      "side": 1,
+      "message": "This section should probably say something about how Aliases were introduced in 1.22, and made default in 1.23.",
+      "range": {
+        "startLine": 1087,
+        "startChar": 0,
+        "endLine": 1087,
+        "endChar": 14
+      },
+      "revId": "3208df0fb41822a9a7bcfa00fd274a65e338cbd9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
