@@ -103,9 +103,6 @@ type, or has an inappropriate type for its context; this is known as
 _type deduction_.
 Third, for every constant expression in the program, it determines the
 value of that constant; this is known as _constant evaluation_.
-
-
-
 Superficially, it appears that these three processes could be done
 sequentially, in the order above, but perhaps surprisingly, they must
 be done together.
@@ -115,9 +112,6 @@ Conversely, the type of an expression may depend on the value of a
 constant, since array types contain constants.
 As a result, type deduction and constant evaluation must be done
 together.
-
-
-
 As another example, we cannot resolve the identifier `k` in the composite
 literal `T{k: 0}` until we know whether `T` is a struct type.
 If it is, then `k` must be found among `T`'s fields.
@@ -264,7 +258,7 @@ Scope:   package "cmd/hello" scope 0x820533590 {
 
 A package's `Path`, such as `"encoding/json"`, is the string
 by which import declarations identify it.
-It is unique within a `$GOPATH` workspace,
+It is unique within a workspace,
 and for published packages it must be globally unique.
 
 
@@ -282,7 +276,7 @@ which provides access to all the named entities or
 [_objects_](#objects) declared at package level.
 `Imports` returns the set of packages directly imported by this
 one, and  may be useful for computing dependencies
-([Initialization Order](#initialization-order)).
+(see [Initialization Order](#initialization-order)).
 
 
 
@@ -336,12 +330,8 @@ offset, though usually we just call its `String` method:
 	fmt.Println(fset.Position(obj.Pos())) // "hello.go:10:6"
 
 
-Not all objects carry position information.
-Since the file format for compiler export data ([Imports](#imports))
-does not record position information, calling `Pos` on an object
-imported from such a file returns zero, also known as
-`token.NoPos`.
-
+Objects for predeclared functions and types such as `len` and `int`
+do not have a valid (non-zero) position: `!obj.Pos().IsValid()`.
 
 
 There are eight kinds of objects in the Go type checker.
@@ -367,14 +357,22 @@ possible types, and we commonly use a type switch to distinguish them.
 	       | *Nil          // predeclared nil
 
 
-`Object`s are canonical.
-That is, two `Object`s `x` and `y` denote the same
-entity if and only if `x==y`.
+
+Objects are canonical.
+That is, two Objects `x` and `y` denote the same entity if and only if `x==y`.
+(This is generally true but beware that parameterized types complicate matters; see
+https://github.com/golang/exp/tree/master/typeparams/example for details.)
+
 Object identity is significant, and objects are routinely compared by
 the addresses of the underlying pointers.
-Although a package-level object is uniquely identified by its name
-and enclosing package, for other objects there is no simple way to
-obtain a string that uniquely identifies it.
+A package-level object (func/var/const/type) can be uniquely
+identified by its name and enclosing package.
+The [`golang.org/x/tools/go/types/objectpath`](https://pkg.go.dev/golang.org/x/tools/go/types/objectpath)
+package defines a naming scheme for objects that are
+[exported](#imports) from their package or are unexported but form part of the
+type of an exported object.
+But for most objects, including all function-local objects,
+there is no simple way to obtain a string that uniquely identifies it.
 
 
 
@@ -436,9 +434,9 @@ We'll look more closely at this in [Imports](#imports).
 All relationships between the syntax trees (`ast.Node`s) and type
 checker data structures such as `Object`s and `Type`s are
 stored in mappings outside the syntax tree itself.
-Be aware that the `go/ast` package also defines a type called
-`Object` that resembles---and predates---the type checker's
-`Object`, and that `ast.Object`s are held directly by
+Be aware that the `go/ast` package also defines an older deprecated
+type called `Object` that resembles---and predates---the type
+checker's `Object`, and that `ast.Object`s are held directly by
 identifiers in the AST.
 They are created by the parser, which has a necessarily limited view
 of the package, so the information they represent is at best partial and
