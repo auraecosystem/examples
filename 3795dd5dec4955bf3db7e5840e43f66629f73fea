@@ -54,6 +54,24 @@
       ],
       "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3560cca7_41e38068",
+        "filename": "internal/simd-cosine-similarity-experiment/cossimgo.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-12-09T22:03:44Z",
+      "side": 1,
+      "message": "\u003e Question: won\u0027t anyone concerned about performance here start with pre-normalized vectors?\n\u003e \n\nHard to say. Many of the popular vector DBs seem to support multiple similarity metrics, including dot product, cosine similarity and some others.\n\n\u003e That is, dotProductGo is probably more realistic.\n\nInterestingly, I get pretty similar results for dot product. Adding dotProductAVX2 to the benchmarking, the deltas between the Go and the SIMD version is similar.\n\nI suppose the CPU has multiple ALUs that can crunch AVX2 ops independently, so the accumulation of `dot`, `na`, and `nb` happens pretty much in parallel, and the final computation of the square root only happens once so it\u0027s meaningless.",
+      "parentUuid": "4c3e3b40_083d2223",
+      "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
