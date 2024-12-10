@@ -90,6 +90,24 @@
       "parentUuid": "3560cca7_41e38068",
       "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "017e18db_ffb93b3e",
+        "filename": "internal/simd-cosine-similarity-experiment/cossimgo.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 30696
+      },
+      "writtenOn": "2024-12-10T14:03:03Z",
+      "side": 1,
+      "message": "Keith, do the memory throughput numbers here make sense to you? Any tips on how to see exactly where we hit the memory limit - just to keep jacking up the slice size?",
+      "parentUuid": "45b714f5_91af4255",
+      "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
