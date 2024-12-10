@@ -18,6 +18,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d29d8b37_a68b1dde",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6875
+      },
+      "writtenOn": "2024-12-10T21:10:03Z",
+      "side": 1,
+      "message": "If we make the array 1GB (`benchArrSize \u003d 256*1024*1024`), then the unrolled code is almost as fast as avx2:\n\nBenchmarkDotProductGo-20            \t       7\t 142986530 ns/op\t15018.78 MB/s\nBenchmarkDotProductAVX2-20          \t      14\t  79892757 ns/op\t26879.58 MB/s\nBenchmarkDotProductGoUnrolled-20    \t      12\t  91645946 ns/op\t23432.39 MB/s",
+      "parentUuid": "77790283_4af5918f",
+      "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4c3e3b40_083d2223",
