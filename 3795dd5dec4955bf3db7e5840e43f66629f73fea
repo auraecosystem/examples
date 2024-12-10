@@ -72,6 +72,24 @@
       "parentUuid": "4c3e3b40_083d2223",
       "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45b714f5_91af4255",
+        "filename": "internal/simd-cosine-similarity-experiment/cossimgo.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 6875
+      },
+      "writtenOn": "2024-12-10T04:41:20Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3560cca7_41e38068",
+      "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
