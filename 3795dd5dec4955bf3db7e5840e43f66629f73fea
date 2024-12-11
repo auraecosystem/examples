@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "76804ffb_983a12ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 52648
+      },
+      "writtenOn": "2024-12-11T13:39:25Z",
+      "side": 1,
+      "message": "Thanks, I\u0027ve added these here.\n\nI think your intuition is correct that in the hardest case (both vectors are not in cache) the memory bandwidth is a limit.\n\nIn real applications of vector DBs, IMHO some additional factors come into play:\n\n1. Typically one vector\u0027s similarity is compared to a large number of vectors in the DB (think of a RAG application, where we find documents similar to a query). So one of the vectors is pretty much always in cache.\n2. For many similarity calculations, the number of vectors we compare with isn\u0027t very large. Again, for a classical RAG application we may have a few hundred or thousand \"documents\" (each a vector), and compare a query\u0027s vector with each to find the most relevant ones. Each vector is just a handful of KiB, so it\u0027s very possible that the whole DB is in (some level of) cache after the first comparison\n\n\nAt the end of the day, I think it matters. As evidence, here\u0027s Weaviate directory of assembly implementations of dot:\n\nhttps://github.com/weaviate/weaviate/tree/123b29520819a1a784f2f660bb6b147368809bca/adapters/repos/db/vector/hnsw/distancer/asm\n\nIIUC this code is generated from C with intrinsics from \n\nhttps://github.com/weaviate/weaviate/tree/123b29520819a1a784f2f660bb6b147368809bca/adapters/repos/db/vector/hnsw/distancer/c\n\nusing https://github.com/gorse-io/goat",
+      "parentUuid": "d29d8b37_a68b1dde",
+      "revId": "3795dd5dec4955bf3db7e5840e43f66629f73fea",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4c3e3b40_083d2223",
