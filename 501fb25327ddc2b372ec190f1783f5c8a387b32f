@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ec133c5_b242c53d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19530
+      },
+      "writtenOn": "2025-04-09T02:15:05Z",
+      "side": 1,
+      "message": "Output of running `make` is here: https://github.com/bitlux/bitlux.github.io/blob/master/tmp/README.md",
+      "revId": "501fb25327ddc2b372ec190f1783f5c8a387b32f",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
