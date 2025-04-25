@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fc74f36_5b7f4465",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2025-04-25T09:28:37Z",
+      "side": 1,
+      "message": "Thanks, I\u0027d forgotten about this step!",
+      "revId": "bfc73283cfbd75195d0a899d65279d389db196c5",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
