@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1cd2237_2e352401",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2025-05-19T17:43:28Z",
+      "side": 1,
+      "message": "This can be made the default case of the switch, if you move L110 after the switch.",
+      "revId": "15f4b8430756b5476bd2e874e7f20d088316868c",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}

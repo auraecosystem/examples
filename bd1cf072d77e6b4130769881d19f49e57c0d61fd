@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "360816f5_e2a708c3",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2025-05-19T17:43:28Z",
+      "side": 1,
+      "message": "Ha! It\u0027s fine. I use ```` ```go...``` ```` blocks in GitHub issues due to my crushing desire to conform. Just no highlighting in my own editor.",
+      "parentUuid": "30072b1f_f1a01b01",
+      "revId": "bd1cf072d77e6b4130769881d19f49e57c0d61fd",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f7f673f7_96da1554",
         "filename": "internal/cmd/weave/weave.go",
         "patchSetId": 1
