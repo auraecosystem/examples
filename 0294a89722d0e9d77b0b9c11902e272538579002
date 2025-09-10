@@ -24,6 +24,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e23b231_b5f5acdb",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2025-09-10T18:57:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0590bbcd_d2b82d6e",
+      "range": {
+        "startLine": 40,
+        "startChar": 35,
+        "endLine": 40,
+        "endChar": 89
+      },
+      "revId": "0294a89722d0e9d77b0b9c11902e272538579002",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e9bd10af_83ae5f5d",
@@ -37,6 +61,30 @@
       "writtenOn": "2025-09-10T18:39:56Z",
       "side": 1,
       "message": "Don\u0027t forget to check for I/O errors when closing a writable file.",
+      "range": {
+        "startLine": 74,
+        "startChar": 8,
+        "endLine": 74,
+        "endChar": 19
+      },
+      "revId": "0294a89722d0e9d77b0b9c11902e272538579002",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1047593_7dce12c7",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2025-09-10T18:57:58Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "e9bd10af_83ae5f5d",
       "range": {
         "startLine": 74,
         "startChar": 8,
