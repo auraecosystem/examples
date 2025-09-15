@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "174a4dea_63d4a8fd",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 57259
+      },
+      "writtenOn": "2025-09-15T19:03:22Z",
+      "side": 1,
+      "message": "Perhaps convey something like: we indent toc items by tabs according to the hierarchy, but we must do this relative to the first item\u0027s depth, otherwise if the first item has a nonzero tab-indent, the toc becomes a code block.",
+      "range": {
+        "startLine": 97,
+        "startChar": 2,
+        "endLine": 100,
+        "endChar": 41
+      },
+      "revId": "2195a1e767ed705babf6da23fa9832f24a294cc8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
