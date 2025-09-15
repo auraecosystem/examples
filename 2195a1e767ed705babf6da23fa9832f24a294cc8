@@ -22,6 +22,30 @@
       },
       "revId": "2195a1e767ed705babf6da23fa9832f24a294cc8",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95f2edac_443d58a0",
+        "filename": "internal/cmd/weave/weave.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 31647
+      },
+      "writtenOn": "2025-09-15T19:08:44Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "174a4dea_63d4a8fd",
+      "range": {
+        "startLine": 97,
+        "startChar": 2,
+        "endLine": 100,
+        "endChar": 41
+      },
+      "revId": "2195a1e767ed705babf6da23fa9832f24a294cc8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
